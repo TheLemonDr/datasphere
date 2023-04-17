@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Welcome to DataSphere, providing you with all of your school needs!">
+    <title>DataSphere</title>
+    <link rel="icon" type="image/x-icon" href="Media/logonew.gif">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo {
+    animation: slideToLeft 4s;
+    animation-name: slideToLeft;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    }
+
+    @keyframes slideToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-175%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+   
+}
+
+        h2 {
+            animation: slideUp 1.5s;
+            animation-name: slideUp;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+        }
+
+        @keyframes slideUp {
+            0% {transform: translateY(0);}
+
+            100% {transform: translateY(-270%);}
+
+        }
+
+        .container {
+          position: relative;
+         width: 50%;
+            }
+
+        .image {
+         display: block;
+         height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+    </style>
+    <audio src="Media/denied.mp3" autoplay></audio>
+</head>
+<body>
+    <center>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="Media/logonew.gif" height="100" width="100" style="margin-left: auto; margin-right: auto;">
+        </a>
+            <h2>DataSphere</h2>
+        
+    </header>
+
+    <script>
+        function password() {
+          var password;
+          var pass1 = "bing chilling";
+      
+          password = prompt('Password required.  Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu', 'Hint:  Jong Xina');
+      
+          if (password == pass1) {
+            create(); // Call create() function if password is correct
+          } else {
+           denied();
+          }
+        }
+      
+        function create() {
+          var url = "https://doctor-lemon.github.io/datasphere/launcher.html";
+          document.getElementById('input');
+          var win = window.open();
+          win.document.body.style.margin = '0';
+          win.document.body.style.height = '100vh';
+          var iframe = win.document.createElement('iframe');
+          iframe.style.border = 'none';
+          iframe.style.width = '100%';
+          iframe.style.height = '100%';
+          iframe.style.margin = '0';
+          iframe.src = url;
+          win.document.body.appendChild(iframe);
+        }
+
+        function denied() {
+            window.alert('Access Denied.  Please try again.')
+            window.location = "https://doctor-lemon.github.io/datasphere"
+        }
+      </script>
+
+
+        <button onclick="password()">This will be hidden, i just havent hidden it yet.</button>
+
+        <br>
+        <br>
+        <br>
+    
+    </center>
+
+    <center>
+    <a href="calculator.html">
+        <div class="container">
+            <img src="Media/mathclass.jpg" alt="Math" class="image" height="250" width="500" style="cursor: pointer;">
+                <div class="overlay">
+                    <div class="text">Math Tool</div>
+                </div>
+          </div>
+        </a>
+          
+          <img class="ela" src="Media/ela.jpeg" height="250" width="500">
+    </center>
+</body>
+</html>
