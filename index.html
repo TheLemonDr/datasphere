@@ -134,11 +134,15 @@
         function password() {
           var password;
           var pass1 = "bing chilling";
+          var pass2 = "song"
       
           password = prompt('Password required.  Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu', 'Hint:  Zhong Xina');
       
           if (password == pass1) {
             create(); // Call create() function if password is correct
+          if (password == pass2) {
+            song()
+          }
           } else {
            denied();
           }
@@ -147,6 +151,22 @@
         
         function create() {
           var url = "https://doctor-lemon.github.io/datasphere/launcher.html";
+          document.getElementById('input');
+          var win = window.open();
+          win.document.body.style.margin = '0';
+          win.document.body.style.height = '100vh';
+          var iframe = win.document.createElement('iframe');
+          iframe.style.border = 'none';
+          iframe.style.width = '100%';
+          iframe.style.height = '100%';
+          iframe.style.margin = '0';
+          iframe.src = url;
+          win.document.body.appendChild(iframe);
+        }
+
+
+        function song() {
+          var url = "https://doctor-lemon.github.io/datasphere/bingchilling.html";
           document.getElementById('input');
           var win = window.open();
           win.document.body.style.margin = '0';
