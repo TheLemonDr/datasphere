@@ -1,5 +1,5 @@
 document.cookie = 'cross-site-cookie2=noneCookie; SameSite=None; Secure';
-function openInNewTab("doctor-lemon.github.io/datasphere") {
+function openInNewTab("https://doctor-lemon.github.io/datasphere") {
 
 
   win = window.open();
