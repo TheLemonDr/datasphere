@@ -128,31 +128,18 @@
           password = prompt('Password required.  Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu', 'Hint:  Zhong Xina');
       
           if (password == pass1) {
-            create(); // Call create() function if password is correct
+            openInNewTab(); // Call create() function if password is correct
           } else {
            denied();
           }
-        }
-      
-        function create() {
-          var url = "https://doctor-lemon.github.io/datasphere/launcher.html";
-          document.getElementById('input');
-          var win = window.open();
-          win.document.body.style.margin = '0';
-          win.document.body.style.height = '100vh';
-          var iframe = win.document.createElement('iframe');
-          iframe.style.border = 'none';
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-          iframe.style.margin = '0';
-          iframe.src = url;
-          win.document.body.appendChild(iframe);
         }
 
         function denied() {
             window.alert('Access Denied.  Please try again.')
         }
       </script>
+
+      <script src="cloak.js"></script>
 
 
         <button onclick="password()">This will be hidden, i just havent hidden it yet.</button>

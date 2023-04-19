@@ -1,5 +1,5 @@
 document.cookie = 'cross-site-cookie2=noneCookie; SameSite=None; Secure';
-function openInNewTab(url) {
+function openInNewTab("doctor-lemon.github.io/datasphere") {
 
 
   win = window.open();
@@ -19,7 +19,7 @@ function openInNewTab(url) {
   win.document.head.appendChild(arc)*/
 
   var title = win.document.createElement('title')
-  title.innerText = "Calculator"
+  title.innerText = "Datasphere"
   win.document.head.appendChild(title)
 
   /*
