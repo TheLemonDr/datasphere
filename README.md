@@ -4,4 +4,4 @@ DataSphere is a project that I am starting that will have many recources for sch
 
 
 
-Note - I added a custom domain, then deleted it.  For some reason, now the site wont load.
+Note - it broke it.  ugh
