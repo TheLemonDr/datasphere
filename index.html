@@ -108,6 +108,18 @@
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
+
+
+
+    a{
+        all: unset;
+    }
+
+    a:hover {
+        color: black;
+        background-color: white;
+        cursor: help;
+    }
     </style>
 </head>
 <body>
@@ -159,7 +171,6 @@
       <script src="cloak.js"></script>
 
 
-        <button onclick="password()">This will be hidden, i just havent hidden it yet.</button>
 
         <br>
         <br>
@@ -188,7 +199,7 @@
     </center>
     <footer>
         <p style="font-size: 8;">DataSphere, V1, Beta Launch</p>
-        <p style="font-size: 8;">(C) Doctor Lemon, 2023</p>
+        <p style="font-size: 8;">(C) <a onclick="password()">Doctor Lemon</a>, 2023</p>
     </footer>
 </body>
 </html>
