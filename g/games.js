@@ -1,5 +1,5 @@
 function slope() {
-    var url = "slope.html";
+    var url = "doctor-lemon.github.io/g/slope.html";
           document.getElementById('input');
           var win = window.open();
           win.document.body.style.margin = '0';
@@ -14,7 +14,7 @@ function slope() {
 }
 
 function waltuh() {
-    var url = "waltuh.html";
+    var url = "doctor-lemon.github.io/g/waltuh.html";
           document.getElementById('input');
           var win = window.open();
           win.document.body.style.margin = '0';
