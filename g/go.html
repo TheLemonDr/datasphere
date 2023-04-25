@@ -4,92 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HISTORY IS ENABLED!!!</title>
+    <title>HISTORY IS ENABLED</title>
     <style>
-        body {
-            background-color: #A3CFA7;
-        }
+        .container {
+  background: red;
+  width: 250px;
+  height: 100px;
+}
 
-        .gamebox {
-            left: 0;
-            width: 66vw;
-        }
+.box {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around */ /* remove; doing nothing */
+}
 
-        .link {
-            color: orange;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .credit {
-            color: rgb(238, 178, 67);
-            margin-left: auto;
-            margin-right: auto;
-        }
+.one {
+  background: green;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
 
-        .notebox {
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.two {
+  background: blue;
+  flex: 2 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  border: 1px dotted yellow;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: brown;
+}
     </style>
 </head>
 <body>
-    <center>
-        <h2>Welcome, to the DataSphere <b>GAMES HUB</b>!</h2>
-    </center>
-
-    <script src="games.js"></script>
-
-    <div class="gamebox">
-        <a href="javascript: slope()">
-             <p class="link">Slope</p>
-        </a>
-        <p class="credit">Credit: Y8</p>
-
-        <a href="javascript: waltuh()">
-            <p class="link">Waltuh Run</p>
-        </a>
-        <p class="credit">Me, made with scratch.</p>
-    </div>
-
-    <div class="notebox">
-        <center>
-            <h3>Notes</h3>
-        </center>
-        <p>Welcome to the beta launch of the DataSphere Games Hub!  This will very likely look horrible, but oh well.  Currently, I have two games. but there are more on the way.  I will add a games form, and I will try to make a music hub as well.  The forms for these things will be linked.  Enjoy, and let me know  if you have any feedback!  Dr. Lemon out.</p>
-    </div>
-
-    <script>
-        function slope() {
-    var url = "doctor-lemon.github.io/g/slope.html";
-          document.getElementById('input');
-          var win = window.open();
-          win.document.body.style.margin = '0';
-          win.document.body.style.height = '100vh';
-          var iframe = win.document.createElement('iframe');
-          iframe.style.border = 'none';
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-          iframe.style.margin = '0';
-          iframe.src = url;
-          win.document.body.appendChild(iframe);
-}
-
-function waltuh() {
-    var url = "doctor-lemon.github.io/g/waltuh.html";
-          document.getElementById('input');
-          var win = window.open();
-          win.document.body.style.margin = '0';
-          win.document.body.style.height = '100vh';
-          var iframe = win.document.createElement('iframe');
-          iframe.style.border = 'none';
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-          iframe.style.margin = '0';
-          iframe.src = url;
-          win.document.body.appendChild(iframe);
-\
-    </script>
+    <div class="container">
+        <div class="box">
+          <div class="one">1/3</div>
+          <div class="two">2/3</div>
+        </div>
+      </div>
 </body>
 </html>
