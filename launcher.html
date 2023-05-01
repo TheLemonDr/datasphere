@@ -76,9 +76,8 @@
 
     <h3><span>Forms</span></h3>
 
-        <a href="forms.html" target="_blank">
-            <button>Forms</button>
-        </a>
+            <button onclick="goforms()">Forms</button>
+     
     
     <script>
         function go() {
@@ -137,6 +136,23 @@
 <script>
     function gogogogo() {
         var url = "https://doctor-lemon.github.io/datasphere/media.html";
+        document.getElementById('input');
+        var win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100vw';
+        iframe.style.height = '100vh';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+      }
+    </script>
+
+<script>
+    function goform() {
+        var url = "https://doctor-lemon.github.io/datasphere/forms.html";
         document.getElementById('input');
         var win = window.open();
         win.document.body.style.margin = '0';
