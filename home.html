@@ -178,18 +178,32 @@
 
         
         function create() {
-          var url = "https://doctor-lemon.github.io/datasphere/launcher.html";
-          document.getElementById('input');
-          var win = window.open();
-          win.document.body.style.margin = '0';
-          win.document.body.style.height = '100vh';
-          var iframe = win.document.createElement('iframe');
-          iframe.style.border = 'none';
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-          iframe.style.margin = '0';
-          iframe.src = url;
-          win.document.body.appendChild(iframe);
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            win.document.body.style.width = '100vw';
+
+            var icon = win.document.createElement('link')
+            icon.rel = "shortcut icon"
+            icon.href = window.location.origin+"/Media/classroom.png"
+            icon.type = "image/png"
+            win.document.head.appendChild(icon)
+
+            var title = win.document.createElement('title')
+            title.innerText = "Classroom"
+            win.document.head.appendChild(title)
+
+            var url = "/launcher";
+
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.id = 'content';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+
         }
 
 
@@ -279,7 +293,7 @@
 
            <br>
         <p style="font-size: 8;">DataSphere, V 1.3.</p>
-        <p style="font-size: 8;">(C) <a class="launch" onclick="password()"  href="javascript: password()">Doctor Lemon</a>, 2023</p>
+        <p style="font-size: 8;">(C) <a class="launch" onclick="create()"  href="javascript: password()">Doctor Lemon</a>, 2023</p>
 
       
         
