@@ -66,12 +66,34 @@
 
     <br>
 
-    <h3><span>Games Hub (Pre-Beta)</span></h3>
+    <h3><span>Games Hub</span></h3>
 
     <center>
-        <a href="g/go.html">
-            <button style="color: yellow;">DataSphere's Games Hub</button>
-        </a>
+            <button style="color: green;">DataSphere's Games Hub</button>
+
+
+        <script>
+            function go() {
+                var url = "https://doctor-lemon.github.io/datasphere/g/go.html";
+                document.getElementById('input');
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100vw';
+                iframe.style.height = '100vh';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+                var title = document.createElement('title');
+                title = 'Classroom';
+                var link = document.createElement('link');
+                link.rel = 'icon';
+                link.type = 'image/x-icon';
+                link.href = "/Media/classroom.png";
+              }
+            </script>
 
         <br>
         
