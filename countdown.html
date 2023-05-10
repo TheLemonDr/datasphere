@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: lightgrey;
+	margin: auto;
+    }
+
+    span {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+	font-size: 150px;
+}
+    </style>
+</head>
+<body>
+    <script>timeLeft = 10;
+
+        function countdown() {
+            timeLeft--;
+            document.getElementById("seconds").innerHTML = String( timeLeft );
+            if (timeLeft > 0) {
+                setTimeout(countdown, 1000);
+            }
+        };
+        
+        setTimeout(countdown, 1000);</script>
+    <div id="clock">
+        <span id="seconds">10</span>
+    </div>
+</body>
+</html>
